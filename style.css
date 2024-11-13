@@ -1,0 +1,165 @@
+/* GENERIC */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family:"Courier Prime Code", Helvetica;
+    color:white;
+    margin:0%;
+    background-image: url("images/background-code.png");
+}
+
+img {
+    width:100%;
+}
+
+h1 {
+    color:#974ec3;
+    padding:0px;
+}
+
+hr {
+    border:none;
+    color:#974ec3;
+    background-color: #974ec3;
+    height:3px;
+    width:200px;
+    margin-right:auto;
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+iframe {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* HEADER*/
+header {
+    display:grid;
+    grid-template-columns: 20fr 1fr 1fr;
+    background-color: #17092b;
+    height:100px;
+}
+
+.headerLogo img {
+    display: block;
+    width:600px;
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.headerLink img {
+    display: block;
+    width:30px;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:20px;
+}
+
+
+/* NAVIGATION */
+nav {
+
+    color: white;
+    background-color: #1f0a3e;
+
+    text-align: center;
+    height:25px;
+    width:100%;
+    position: sticky;
+    padding-top:8px;
+
+    top:0;
+    margin:0%;
+}
+
+/* MAIN */
+.main {
+    background-color:#161616;
+    border-left:white 4px solid;
+    border-right:white 4px solid;
+    border-top:none;
+    border-bottom:none;
+    padding-top:20px;
+    padding-bottom:60px;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+.banner {
+    border-radius: 20px;
+}
+
+.youtubeLatest{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.footerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:10%;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+a:link {
+    color:white;
+}
+
+a:visited {
+    color:white;
+}
+
+a:hover {
+    color:#974ec3
+}
+
+a:active {
+    color:#974ec3
+}
+
+/* FONTS */
+@font-face {
+    font-family: "Courier Prime Code";
+    src: url("fonts/Courier\ Prime\ Code.ttf");
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 800px) {
+    header {
+        grid-template-columns: 1fr;
+        height:200px;
+    }
+
+    .headerLink img {
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .youtubeLatest{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESTRICT MAIN CONTENT WIDTH */
+@media screen and (min-width: 1200px) {
+    .main {
+      width: 1200px;
+      margin: auto;
+    }
+  }
