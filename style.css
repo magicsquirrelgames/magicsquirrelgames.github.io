@@ -9,7 +9,7 @@ body {
     font-family:"Courier Prime Code", Helvetica;
     color:white;
     margin:0%;
-    background-image: url("images/background-code.png");
+    background-image:url("images/background-code.png");
 }
 
 img {
@@ -40,6 +40,7 @@ p {
 iframe {
     margin-left:auto;
     margin-right:auto;
+    border-radius: 20px;
 }
 
 /* HEADER*/
@@ -73,10 +74,10 @@ nav {
     background-color: #1f0a3e;
 
     text-align: center;
-    height:25px;
     width:100%;
     position: sticky;
     padding-top:8px;
+    padding-bottom:6px;
 
     top:0;
     margin:0%;
@@ -85,8 +86,6 @@ nav {
 /* MAIN */
 .main {
     background-color:#161616;
-    border-left:white 4px solid;
-    border-right:white 4px solid;
     border-top:none;
     border-bottom:none;
     padding-top:20px;
@@ -95,21 +94,24 @@ nav {
     padding-left:20px;
 }
 
-.banner {
-    border-radius: 20px;
+.mainContent {
+    padding-left:100px;
+    padding-right:100px;
 }
 
-.youtubeLatest{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:10px;
+.mainSection {
+    margin-bottom:100px;
+}
+
+.banner {
+    border-radius: 20px;
 }
 
 .footerImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:10%;
+    width:100px;
 }
 
 /* LINKS */
@@ -145,21 +147,28 @@ a:active {
         height:200px;
     }
 
+    .headerLogo img {
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     .headerLink img {
         margin-top:10px;
         margin-left:auto;
         margin-right:auto;
     }
 
-    .youtubeLatest{
-        grid-template-columns: 1fr;
+    .mainContent{
+        padding-left:6px;
+        padding-right:6px;
     }
 }
 
 /* RESTRICT MAIN CONTENT WIDTH */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
     .main {
-      width: 1200px;
+      width: 800px;
       margin: auto;
     }
   }
