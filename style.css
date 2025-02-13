@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family:"Courier Prime Code", Helvetica;
+    font-family:Verdana, sans-serif;
     color:white;
     margin:0%;
     background-image:url("images/background-code.png");
@@ -19,8 +19,15 @@ img {
 }
 
 h1 {
+    font-family:"Cascadia Mono", "Lucida Console", monospace;
+    font-weight: normal;
     color:#974ec3;
     padding:0px;
+    padding-top:20px;
+}
+
+nav {
+    font-family:"Cascadia Mono", "Lucida Console", monospace;
 }
 
 hr {
@@ -35,10 +42,6 @@ hr {
     margin-bottom:20px;
 }
 
-p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
 iframe {
     margin-left:auto;
     margin-right:auto;
@@ -50,20 +53,20 @@ header {
     display:grid;
     grid-template-columns: 20fr 1fr 1fr;
     background-color: #17092b;
-    height:100px;
+    height:130px;
 }
 
 .headerLogo img {
     display: block;
     width:600px;
-    margin-top:10px;
+    margin-top:20px;
     margin-left:20px;
 }
 
 .headerLink img {
     display: block;
     width:30px;
-    margin-top:30px;
+    margin-top:50px;
     margin-left:auto;
     margin-right:20px;
 }
@@ -88,25 +91,15 @@ nav {
 /* MAIN */
 .main {
     background-color:#161616;
-    border-top:none;
-    border-bottom:none;
-    padding-top:20px;
     padding-bottom:60px;
-    padding-right:20px;
-    padding-left:20px;
+    padding-top: 1px;
 }
 
-.mainContent {
-    padding-left:100px;
-    padding-right:100px;
-}
 
 .mainSection {
+    padding-left:100px;
+    padding-right:100px;
     margin-bottom:100px;
-}
-
-.banner {
-    border-radius: 20px;
 }
 
 .footerImage {
@@ -116,10 +109,20 @@ nav {
     width:100px;
 }
 
-.main img {
-    border-radius: 20px;
-    margin-top:40px;
-    margin-bottom:40px;
+/* SNOWBOARD PENGUIN */
+.bodySnowboardPenguin {
+    font-family:"Mouse Memoirs", Verdana, sans-serif;
+    color:#007aff;
+    margin:0%;
+    background-image:url("images/snowboard-penguin-background.png");
+    background-attachment: fixed;
+    background-size:cover;
+    background-color: #60c8ff;
+}
+
+.bodySnowboardPenguin .main {
+    font-size: 175%;
+    background-color: white;
 }
 
 /* LINKS */
@@ -144,8 +147,18 @@ a:active {
 
 /* FONTS */
 @font-face {
-    font-family: "Courier Prime Code";
-    src: url("fonts/Courier\ Prime\ Code.ttf");
+    font-family: "Cascadia Mono";
+    src: url("fonts/CascadiaMono.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather Light";
+    src: url("fonts/Merriweather-Light.ttf");
+}
+
+@font-face {
+    font-family: "Mouse Memoirs";
+    src: url("fonts/MouseMemoirs-Regular.ttf");
 }
 
 /* MOBILE VIEW */
