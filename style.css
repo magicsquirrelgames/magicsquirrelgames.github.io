@@ -184,6 +184,12 @@ a:active {
         padding-left:6px;
         padding-right:6px;
     }
+
+    .mainSection {
+        padding-left:6px;
+        padding-right:6px;
+        margin-bottom:100px;
+    }
 }
 
 /* RESTRICT MAIN CONTENT WIDTH */
