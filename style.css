@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family:Verdana, sans-serif;
+    font-family:"Open Sans", sans-serif;
     color:white;
     margin:0%;
     background-image:url("images/background-code.png");
@@ -23,7 +23,8 @@ h1 {
     font-weight: normal;
     color:#974ec3;
     padding:0px;
-    padding-top:20px;
+    padding-top:40px;
+    margin-top:0px;
 }
 
 nav {
@@ -92,7 +93,6 @@ nav {
 .main {
     background-color:#161616;
     padding-bottom:60px;
-    padding-top: 1px;
 }
 
 
@@ -123,6 +123,11 @@ nav {
 .bodySnowboardPenguin .main {
     font-size: 175%;
     background-color: white;
+}
+
+/* FROG HOP */
+.bodyFrogHop {
+
 }
 
 /* LINKS */
@@ -161,6 +166,11 @@ a:active {
     src: url("fonts/MouseMemoirs-Regular.ttf");
 }
 
+@font-face{
+    font-family: "Open Sans";
+    src:url("fonts/OpenSans-Light.ttf")
+}
+
 /* MOBILE VIEW */
 @media screen and (max-width: 800px) {
     header {
@@ -186,8 +196,8 @@ a:active {
     }
 
     .mainSection {
-        padding-left:6px;
-        padding-right:6px;
+        padding-left:20px;
+        padding-right:20px;
         margin-bottom:100px;
     }
 }
