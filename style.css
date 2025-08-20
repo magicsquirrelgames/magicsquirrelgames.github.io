@@ -16,19 +16,15 @@ body {
 
 img {
     width:100%;
+    margin:auto;
+    display:block;
+
 }
 
 h1 {
     font-family:"Cascadia Mono", "Lucida Console", monospace;
     font-weight: normal;
     color:#974ec3;
-    padding:0px;
-    padding-top:40px;
-    margin-top:0px;
-}
-
-nav {
-    font-family:"Cascadia Mono", "Lucida Console", monospace;
 }
 
 hr {
@@ -75,7 +71,7 @@ header {
 
 /* NAVIGATION */
 nav {
-
+    font-family:"Cascadia Mono", "Lucida Console", monospace;
     color: white;
     background-color: #1f0a3e;
 
@@ -86,20 +82,20 @@ nav {
     padding-bottom:6px;
 
     top:0;
-    margin:0%;
+    margin:0px;
 }
 
 /* MAIN */
 .main {
     background-color:#161616;
-    padding-bottom:60px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .mainSection {
     padding-left:100px;
     padding-right:100px;
-    margin-bottom:100px;
 }
 
 .footerImage {
@@ -107,6 +103,33 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width:100px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.darkened{
+    background-color: #111111;
+}
+
+.tagline{
+    text-align: center;
+    padding-top:0px;
+    padding-bottom:100px;
+}
+
+.tagline h1{
+    font-family: "Rimouski";
+    font-size: 250%;
+    color:#ffffff;
+}
+
+.lineBreak{
+    line-height: 200%;
+}
+
+.centered{
+    display:grid;
+    place-items: center;
 }
 
 /* SNOWBOARD PENGUIN */
@@ -127,7 +150,60 @@ nav {
 
 /* FROG HOP */
 .bodyFrogHop {
+    background-image: url("images/background-frog-hop.png");
+}
 
+.bodyFrogHop .main{
+    background-color: #8eb418;
+    font-family:"Retro Wild";
+    font-size:1.5em;
+}
+
+.mainPageFrogHop{
+    background-color: #8eb418;
+    font-family:"Retro Wild";
+    font-size:150%;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    text-align: center;
+}
+
+.frogHopDownloadButtons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bodyFrogHop h1{
+    color: #ffffff;
+    font-family:"Retro Wild";
+    font-size:200%;   
+}
+
+.bodyFrogHop hr{
+    color:#ffffff;
+    background-color: #ffffff;
+    height:6px;
+    width:200px;
+    margin-right:auto;
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:20px;    
+    border-radius: 4px;
+}
+
+.bodyFrogHop .darkened{
+    background-color: #82a515;
+}
+
+.frogHopGif{
+    margin-left: auto;
+    margin-right:auto;
+    border: 10px solid #f6b400;
+    border-radius: 40px;
+}
+
+.frogHopTitle{
+    text-align: center;     
 }
 
 /* LINKS */
@@ -168,7 +244,17 @@ a:active {
 
 @font-face{
     font-family: "Open Sans";
-    src:url("fonts/OpenSans-Light.ttf")
+    src:url("fonts/OpenSans-Light.ttf");
+}
+
+@font-face{
+    font-family:"Rimouski";
+    src:url("fonts/rimouski.otf");
+}
+
+@font-face{
+    font-family:"Retro Wild";
+    src:url("fonts/retro-wild.otf");
 }
 
 /* MOBILE VIEW */
